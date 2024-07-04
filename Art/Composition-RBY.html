@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+      background-color: #43766C;
+      color: #F8FAE5;
+    }
+    .grid-container {
+      background-color: #000;
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template: 414px 130px 155px 22px / 320px 198px 153px 50px;
+      gap: 9px;
+      margin-bottom: 15px;
+    }
+    .red {
+      background-color: #E72F24;
+    }
+    .white {
+      background-color: #F0F1EC;
+    }
+    .black {
+      background-color: #232629;
+    }
+    .blue {
+      background-color: #004592;
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+    #white-top-right {
+      grid-column: span 3;
+    }
+    #white-middle-left {
+      grid-row: span 2;
+    }
+    #white-middle-middle {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    #blue-middle-right-top {
+      border-bottom: 12px solid black;
+    }
+    #white-middle-right-bottom {
+      grid-row: span 2;
+    }
+    h1 {
+      font-size: 32pt;
+      font-family: "Beiruti", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Composition with Red, Blue and Yellow</h1>
+  <div class="grid-container">
+    <div class="red" id="red-top-left"></div>
+      <div class="white" id="white-top-right"></div>
+      <div class="white" id="white-middle-left"></div>
+      <div class="white" id="white-middle-middle"></div>
+      <div class="blue" id="blue-middle-right-top"></div>
+      <div class="white" id="white-middle-right-bottom"></div>
+      <div class="white" id="white-bottom-left"></div>
+      <div class="yellow" id="yellow-bottom-middle-left"></div>
+      <div class="black" id="black-bottom-middle-right"></div>
+   </div>
+</body>
+
+</html>

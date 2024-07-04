@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composition with Large Red plane, Yellow, Black, Grey and Blue</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            flex-direction: column;
+            background-color: #43766C;
+            color: #F8FAE5;
+        }
+        .grid-container {
+            background-color: black;
+            width: 800px;
+            height: 800px;
+            display: grid;
+            grid-template: 75px 200px 200px 75px 116px 50px 30px / 75px 100px 100px 200px 100px 100px 71px;
+            gap: 9px;
+            margin-bottom: 15px;
+        }
+        .red {
+            background-color: #E72F24;
+        }
+        .white {
+            background-color: #F0F1EC;
+        }
+        .blue {
+            background-color: #004592;
+        }
+        .yellow {
+            background-color: #F9D01E;
+        }
+        .black {
+            background-color: #232629;
+        }
+        #block1 {
+            grid-column: span 2;
+        }
+        #block2 {
+            grid-column: span 2;
+        }
+        #block3 {
+            grid-column: span 2;
+        }
+        #block12 {
+            grid-row: span 4;
+        }
+        #block5 {
+            grid-row: span 2;
+            grid-column: span 3;
+        }
+        #block6 {
+            grid-column: span 2;
+        }
+        #block7 {
+            grid-row: span 2;
+        }
+        #block8 {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+        #block13 {
+            grid-column: span 2;
+        }
+        #block14 {
+            grid-row: span 3;
+        }
+        #block15 {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+        #block18 {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        #block20 {
+            grid-row: span 3;
+        }
+        #block16 {
+            grid-column: span 3;
+        }
+        h1 {
+            font-size: 32pt;
+            font-family: "Beiruti", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Composition with Large Red Plane, Yellow, Black, Grey and Blue</h1>
+    <div class="grid-container">
+        <div class="white" id="block1"></div>
+        <div class="white" id="block2"></div>
+        <div class="yellow" id="block3"></div>
+        <div class="white" id="block12"></div>
+        <div class="white" id="block4"></div>
+        <div class="red" id="block5"></div>
+        <div class="yellow" id="block6"></div>
+        <div class="white" id="block7"></div>
+        <div class="white" id="block10"></div>
+        <div class="white" id="block11"></div>
+        <div class="black" id="block8"></div>
+        <div class="white" id="block9"></div>
+        <div class="white" id="block13"></div>
+        <div class="yellow" id="block14"></div>
+        <div class="white" id="block19"></div>
+        <div class="blue" id="block18"></div>
+        <div class="red" id="block20"></div>
+        <div class="white" id="block15"></div>
+        <div class="black" id="block17"></div>
+        <div class="white" id="block16"></div>
+        
+        
+    </div>
+</body>
+</html>

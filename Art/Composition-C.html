@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composition-C</title>
+    <style>
+        /* Beiruti font import */
+        @import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Bungee+Spice&display=swap');
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            background-color: #43766C;
+            color: #F8FAE5;
+        }
+        .grid-container {
+            background-color: black;
+            height: 800px;
+            width: 800px;
+            display: grid;
+            grid-template: 300px 200px 250px 25px / 50px 300px 250px 173px;
+            gap: 9px;
+            margin-bottom: 15px;
+        }
+        .red {
+            background-color: #E72F24;
+        }
+        .white {
+            background-color: #F0F1EC;
+        }
+        .blue {
+            background-color: #004592;
+        }
+        .yellow {
+            background-color: #F9D01E;
+        }
+        #red-top-left {
+            grid-column: span 2;
+            border-bottom: 5px solid black;
+        }
+        #white-top-right {
+            grid-column: span 2;
+            border-bottom: 5px solid black;
+        }
+        #white-middle-left {
+            grid-column: span 2;
+            border-bottom: 5px solid black;
+        }
+        #white-middle-right {
+            grid-column: span 2;
+            border-bottom: 5px solid black;
+        }
+        #yellow-bottom-left-left {
+            grid-row: span 2;
+        }
+        #white-bottom-left-right {
+            grid-row: span 2;
+        }
+        #blue-bottom-right-left-top {
+            border: 5px solid black;
+        }
+        #white-bottom-right-right {
+            grid-row: span 2;
+            
+        }
+        h1 {
+            font-family: "Beiruti", sans-serif;
+            font-size: 32pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Composition-C</h1>
+    <div class="grid-container">
+        <div class="red" id="red-top-left"></div>
+        <div class="white" id="white-top-right"></div>
+        <div class="white" id="white-middle-left"></div>
+        <div class="white" id="white-middle-right"></div>
+        <div class="yellow" id="yellow-bottom-left-left"></div>
+        <div class="white" id="white-bottom-left-right"></div>
+        <div class="blue" id="blue-bottom-right-left-top"></div>
+        <div class="white" id="white-bottom-right-right"></div>
+        <div class="white" id="white-bottom-right-left-bottom"></div>
+    </div>
+</body>
+</html>
