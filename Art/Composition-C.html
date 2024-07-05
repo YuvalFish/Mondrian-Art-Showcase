@@ -72,6 +72,23 @@
             font-family: "Beiruti", sans-serif;
             font-size: 32pt;
         }
+        @media (max-width:600px) {
+        .grid-container {
+            height: 400px;
+            width: 400px;
+            grid-template: 150px 100px 125px 12.5px / 25px 150px 125px 86.5px;
+            gap: 4.5px;
+        }
+        h1 {
+            font-size: 24pt;
+            margin: 50px 0;
+            text-align: center;
+        }
+        body {
+            justify-content: unset;
+            gap: 10px
+        }
+    }
     </style>
 </head>
 <body>

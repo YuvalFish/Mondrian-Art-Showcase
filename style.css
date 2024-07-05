@@ -48,4 +48,15 @@ body {
 a {
     text-decoration: none;
 }
+
+@media (max-width: 600px)
+{
+    .grid-container {
+        grid-template: 200px / 200px;
+    }
+    #header {
+        font-size: 32pt;
+        padding: 10px;
+    }
+}
   
